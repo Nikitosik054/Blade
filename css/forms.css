@@ -1,0 +1,75 @@
+.form-div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #1877f2;
+  font-weight: 700;
+}
+
+.form-div > form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 1.5rem 1rem;
+  width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.form-div > form input {
+  outline: none;
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.form-div > form input:focus {
+  border: 1.8px solid #1877f2;
+}
+
+.form-div > form .login {
+  outline: none;
+  border: none;
+  background: #1877f2;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.form-div > form .login:hover {
+  background: #0f71f1;
+  cursor: pointer;
+}
+
+.form-div > form .confirm {
+  outline: none;
+  border: none;
+  background: #1877f2;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.form-div > form .confirm:hover {
+  background: #0f71f1;
+  cursor: pointer;
+}
+
+.form-div > form a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 0.8rem;
+  color: #1877f2;
+}
