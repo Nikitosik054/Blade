@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <title>Blade</title>
+</head>
+<body>
+
+  <div style="display: none; z-index: 1000;" class="auth-div form-div">
+    <form style="display: flex;" id="auth-form">
+      <p class="logo">
+        Blade
+      </p>
+      <label>Phone number:</label>
+      <input id="phone" type="tel" placeholder="+7999..." required="">
+      <div id="recaptcha-div"></div>
+      <button class="login">Next</button>
+    </form>
+    <form style="display: none;" id="verify-form">
+      <p class="logo">
+        Blade
+      </p>
+      <label>Code:</label>
+      <input id="code" type="number" placeholder="123456" required="">
+      <button class="login">Confirm</button>
+    </form>
+  </div>
+  <div style="display: none; z-index: 1000;" class="UserInfoForm-div form-div">
+    <form id="UserInfoForm-form">
+      <p class="logo">
+        Blade
+      </p>
+      <p class="invalidname" style="color:#FF000E; display:none">
+        A user with this name already exists
+      </p>
+      <label>Username:</label>
+      <input id="name" type="text" placeholder="John5676" required="">
+      <button class="confirm">Confirm</button>
+    </form>
+  </div>
+  <div id="root">
+    <div class="loading-wave">
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
